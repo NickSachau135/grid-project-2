@@ -23,7 +23,6 @@
     .item {
         width: 100%;
         height: auto;
-        justify-items: end;
     }
 
     body {
@@ -118,6 +117,10 @@
         grid-area: logo;
     }
 
+    footer {
+        display: none;
+    }
+
     p {
         grid-area: p;
         position: absolute;
@@ -125,6 +128,7 @@
         right: 0;
         text-align: right;
         font-weight: bolder;
+        color: crimson;
     }
 
     li {
@@ -159,24 +163,20 @@
 
 @media(max-width: 500px) {
     .container {
-        width: 100%;
-        height: auto;
         display: grid;
-        grid-template-columns: repeat(5, 250px); /* 5 colums */
-        grid-template-rows: auto; /* 8 rows */
+        grid-template-columns: repeat(5, auto); /* 5 colums */
         grid-gap: 2px;
-        position: relative;
 
 
         grid-template-areas: 
             "logo logo logo logo logo"
             "logo logo logo logo logo"
-            "fb tw . . img3"
+            "fb img19 img20 img20 img3"
+            "tw img19 img20 img20 img3"
             "img4 img4 img5 img6 img7"
             "img8 img9 img9 img10 img11"
             "img8 img13 img14 img14 img15"
-            "img12 img13 img16 img17 img18"
-            "img19 img20 img20 . ."
+            "img12 img13 img16 img17 img18  "
     }
 
     .item {
@@ -186,10 +186,17 @@
     }
 
     body {
-        border: solid gray 15px;
-        width: fit-content;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    footer {
+        grid-area: p;
+        font-weight: bolder;
+        color: hotpink;
+        font-size: 5px;
+        background-color: burlywood;
     }
 
     .img1 {
@@ -278,22 +285,13 @@
     }
 
     p {
-        grid-area: p;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        text-align: right;
-        font-weight: bolder;
+        display: none;
     }
 
     li {
         display: inline;
-        padding: 25px 20px;
-        
-    }
-
-    nav {
-        grid-area: nav;
+        padding: 10px 5px;
+        text-align: left;
     }
 
     ul {
@@ -301,12 +299,10 @@
     }
 
     nav  {
-        width: 100%;
-        background-color: gray;
-        margin: 0;
+        width: auto;
         color: black;
-        padding: 10px 0px 10px 0px;
-        background-color: black;
+        background-color: burlywood;
+        font-size: 5px;
     }
 
     a {
