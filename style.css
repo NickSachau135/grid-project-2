@@ -1,0 +1,162 @@
+@media(min-width: 500px) {
+    .container {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 250px); /* 5 colums */
+        grid-template-rows: auto; /* 8 rows */
+        grid-gap: 2px;
+        position: relative;
+
+
+        grid-template-areas: 
+            "logo logo logo logo fb"
+            "logo logo logo logo tw"
+            "logo logo logo logo img3"
+            "img4 img4 img5 img6 img7"
+            "img8 img9 img9 img10 img11"
+            "img8 img13 img14 img14 img15"
+            "img12 img13 img16 img17 img18"
+            "img19 img20 img20 . ."
+    }
+
+    .item {
+        width: 100%;
+        height: auto;
+        justify-items: end;
+    }
+
+    body {
+        border: solid gray 15px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img1 {
+        grid-area: fb;
+    }
+
+    .img2 {
+        grid-area: tw;
+    }
+
+    .img3 {
+        grid-area: img3;
+    }
+
+    .img4 {
+        grid-area: img4;
+    }
+
+    .img5 {
+        grid-area: img5;
+    }
+
+    .img6 {
+        grid-area: img6;
+    }
+
+    .img7 {
+        grid-area: img7;
+    }
+
+    .img8 {
+        grid-area: img8;
+    }
+
+    .img9 {
+        grid-area: img9;
+    }
+
+    .img10 {
+        grid-area: img10;
+    }
+
+    .img11 {
+        grid-area: img11;
+    }
+
+    .img12 {
+        grid-area: img12;
+    }
+
+    .img13 {
+        grid-area: img13;
+    }
+
+    .img14 {
+        grid-area: img14;
+        align-items: center;
+    }
+
+    .img15 {
+        grid-area: img15;
+    }
+
+    .img16 {
+        grid-area: img16;
+    }
+
+    .img17 {
+        grid-area: img17;
+    }
+
+    .img18 {
+        grid-area: img18;
+    }
+
+    .img19 {
+        grid-area: img19;
+    }
+
+    .img20 {
+        grid-area: img20;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    p {
+        grid-area: p;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+        font-weight: bolder;
+    }
+
+    li {
+        display: inline;
+        padding: 25px 20px;
+        
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    ul {
+        text-decoration: none;
+    }
+
+    nav  {
+        width: 100%;
+        background-color: gray;
+        margin: 0;
+        color: black;
+        padding: 10px 0px 10px 0px;
+        background-color: black;
+    }
+
+    a {
+        text-decoration: none;
+        width: auto;
+        color: white;
+    }
+}
+
+@media(max-width: 500px) {
+    
+}
