@@ -1,0 +1,42 @@
+.txtFB {
+    text-align: center;
+    animation: glow .5s infinite alternate;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    opacity: 1;
+    color: white;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 5px 15px red;
+    }
+}
+
+.btnContainer {  /*div element*/
+    text-align: center;
+    height: 250px;
+    border: white 2px solid;
+}
+
+.btnFB {
+    background-color: cadetblue;
+    text-decoration: none;
+    border: gray 2px solid;
+    padding: 25px 50px;
+}
+
+.btnHome {
+    background-color: cyan;
+    text-decoration: none;
+    border: gray 2px solid;
+    padding: 25px 50px;
+}
+
+.btnFB:hover {
+    background-color: crimson;
+}
+
+.btnHome:hover {
+    background-color: darkorange;
+}
